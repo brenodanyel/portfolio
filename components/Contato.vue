@@ -4,7 +4,7 @@
 
         <p>
             Caso deseje entrar em contato, eu ficarei feliz em te responder o quanto antes! Basta preencher o formulário
-            abaixo ou envie um e-mail diretamente para
+            abaixo ou enviar um e-mail diretamente para
 
             <a
                 href="mailto:bdls1704@hotmail.com"

@@ -12,6 +12,7 @@
     "@nuxt/devtools": "latest",
     "@types/aos": "^3.0.4",
     "@types/node": "^18",
+    "@types/validator": "^13.7.17",
     "autoprefixer": "^10.4.14",
     "nuxt": "^3.6.1",
     "postcss": "^8.4.24",
@@ -22,6 +23,9 @@
   "dependencies": {
     "aos": "^2.3.4",
     "devicon": "^2.15.1",
-    "swiper": "^10.0.3"
+    "resend": "^0.16.0",
+    "swiper": "^10.0.3",
+    "validator": "^13.9.0",
+    "vue-toast-notification": "^3.1.1"
   }
 }

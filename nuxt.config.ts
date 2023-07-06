@@ -11,5 +11,8 @@ export default defineNuxtConfig({
         },
     },
 
-    plugins: [{ mode: "client", src: "@/plugins/aos" }],
+    plugins: [
+        { mode: "client", src: "@/plugins/aos" },
+        { mode: "client", src: "@/plugins/toast" },
+    ],
 });

@@ -7,6 +7,6 @@ export default defineNuxtPlugin(() => {
         // disable: () => window.innerWidth <= 768,
         duration: 600,
         easing: "ease-in-out",
-        once: false,
+        once: true,
     });
 });

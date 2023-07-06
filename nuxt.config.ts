@@ -11,8 +11,5 @@ export default defineNuxtConfig({
         },
     },
 
-    plugins: [
-        { mode: "client", src: "@/plugins/aos" },
-        { mode: "client", src: "@/plugins/flowbite" },
-    ],
+    plugins: [{ mode: "client", src: "@/plugins/aos" }],
 });

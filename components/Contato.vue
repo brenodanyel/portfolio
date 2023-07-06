@@ -91,10 +91,10 @@
 const { $toast } = useNuxtApp();
 const $router = useRouter();
 
-const name = ref("a");
-const email = ref("asd@asd.com");
-const subject = ref("as");
-const message = ref("a");
+const name = ref("");
+const email = ref("");
+const subject = ref("");
+const message = ref("");
 
 const loading = ref(false);
 

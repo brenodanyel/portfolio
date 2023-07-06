@@ -3,6 +3,7 @@ export default defineNuxtConfig({
     devtools: { enabled: false },
 
     imports: {},
+
     postcss: {
         plugins: {
             tailwindcss: {},
@@ -10,5 +11,8 @@ export default defineNuxtConfig({
         },
     },
 
-    plugins: [{ src: "@/plugins/aos", mode: "client" }],
+    plugins: [
+        { mode: "client", src: "@/plugins/aos" },
+        { mode: "client", src: "@/plugins/flowbite" },
+    ],
 });

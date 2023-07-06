@@ -76,6 +76,7 @@ import "swiper/css/scrollbar";
 const modules = [Pagination, Scrollbar, EffectCoverflow, Mousewheel, Autoplay];
 
 const perView = computed(() => {
+    if (!process.client) return 1;
     if (window.innerWidth < 768) return 1;
     return 2;
 });

@@ -17,11 +17,12 @@
                     v-for="(project, index) in projects"
                     :key="project.name"
                     data-carousel-item
-                    class="hidden duration-700 ease-in-out group"
+                    class="hidden duration-700 ease-in-out"
                 >
                     <div class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
                         <div
-                            class="p-4 md:p-20 flex gap-10 flex-col lg:flex-row items-center justify-between rounded-xl bg-neutral-900 group:odd:flex-row-reverse"
+                            class="p-4 md:p-20 flex gap-10 flex-col lg:flex-row items-center justify-between rounded-xl"
+                            :class="{ 'lg:flex-row-reverse': index % 2 === 0 }"
                         >
                             <div class="flex flex-col gap-4">
                                 <p class="uppercase text-neutral-500 text-sm">{{ project.type }}</p>
@@ -60,7 +61,7 @@
 
             <!-- Slider arrow left -->
             <button
-                class="absolute top-1/2 -translate-y-1/2 left-0 z-30 p-4 active:scale-125 duration-200"
+                class="absolute top-1/2 -translate-y-1/2 left-2 z-30 p-4 active:scale-125 duration-200 bg-neutral-900 rounded-full bg-opacity-40"
                 data-carousel-prev
             >
                 <IconsArrowLeft />
@@ -68,14 +69,14 @@
 
             <!-- Slider arrow right -->
             <button
-                class="absolute top-1/2 -translate-y-1/2 right-0 z-30 p-4 active:scale-125 duration-200"
+                class="absolute top-1/2 -translate-y-1/2 right-2 z-30 p-4 active:scale-125 duration-200 bg-neutral-900 rounded-full bg-opacity-40"
                 data-carousel-next
             >
                 <IconsArrowRight />
             </button>
 
             <!-- Slider indicators -->
-            <div class="absolute z-30 flex gap-3 -bottom-7 left-1/2 -translate-x-1/2">
+            <div class="absolute z-30 flex gap-3 -bottom-4 left-1/2 -translate-x-1/2">
                 <button
                     v-for="(_, index) in projects"
                     type="button"
@@ -116,6 +117,18 @@ const projects = [
     {
         type: "Aplicação de e-commerce",
         name: "Crown Clothing 3",
+        description:
+            "Online store built with React and Firebase. It has a complete authentication system, shopping cart, payment processing and more.",
+        image: "https://picsum.photos/500/500",
+        technologies: ["React", "NodeJS", "MongoDB", "Express", "Firebase"],
+        links: [
+            { name: "Ver o código", link: "" },
+            { name: "Visitar o app", link: "" },
+        ],
+    },
+    {
+        type: "Aplicação de e-commerce",
+        name: "Crown Clothing 4",
         description:
             "Online store built with React and Firebase. It has a complete authentication system, shopping cart, payment processing and more.",
         image: "https://picsum.photos/500/500",

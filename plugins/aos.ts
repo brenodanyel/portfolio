@@ -4,7 +4,8 @@ import { defineNuxtPlugin } from "nuxt/app";
 
 export default defineNuxtPlugin(() => {
     AOS.init({
-        // disable: () => window.innerWidth <= 768,
+        offset: -window.innerHeight / 2,
+        // disable: window.innerWidth <= 768,
         duration: 600,
         easing: "ease-in-out",
         once: true,

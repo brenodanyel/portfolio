@@ -50,7 +50,7 @@
                     <label for="assunto" class="text-2xl">Assunto</label>
                     <input
                         type="text"
-                        name="_subject"
+                        name="assunto"
                         id="assunto"
                         class="border-2 border-gray-300 rounded-md p-2 text-neutral-900"
                         placeholder="Insira o assunto que deseja tratar"

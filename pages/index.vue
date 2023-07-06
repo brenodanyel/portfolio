@@ -27,3 +27,10 @@
         <VoltarParaOTopo />
     </div>
 </template>
+
+<script setup lang="ts">
+useSeoMeta({
+    title: "Portfólio | Breno Danyel",
+    description: "Portfólio de desenvolvimento web e mobile de Breno",
+});
+</script>

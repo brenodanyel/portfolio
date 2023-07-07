@@ -1,5 +1,5 @@
 import { Resend } from "resend";
-import isEmail from "validator/lib/isEmail";
+import * as validator from "validator";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -9,7 +9,7 @@ export default defineEventHandler(async (event) => {
     if (typeof name !== "string" || name.length < 5)
         throw createError({ statusCode: 400, statusMessage: "O nome deve ter pelo menos 5 caracteres" });
 
-    if (typeof email !== "string" || !isEmail(email))
+    if (typeof email !== "string" || !validator.isEmail(email))
         throw createError({ statusCode: 400, statusMessage: "O e-mail deve ser válido" });
 
     if (typeof subject !== "string" || subject.length < 5)
